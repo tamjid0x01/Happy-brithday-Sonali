@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sonali ❤️</title>
+  <meta name="description" content="A birthday surprise for Jannatul Ferdous Sonali — made with love, by her husband." />
+  <meta name="author" content="tamjid0x01" />
+  <meta name="theme-color" content="#16082e" />
+  <meta property="og:title" content="Happy Birthday, Sonali ❤️" />
+  <meta property="og:description" content="A birthday surprise made of code, cake & a million wishes for the woman I love." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tamjid0x01.github.io/Happy-brithday-Sonali/" />
+  <meta property="og:image" content="https://tamjid0x01.github.io/Happy-brithday-Sonali/assets/sonali.jpg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Caveat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ GIFT INTRO OVERLAY ══════════════ -->
+  <div class="gift-overlay" id="giftOverlay" aria-hidden="false">
+    <div class="gift-stage">
+      <p class="gift-kicker">a little surprise awaits…</p>
+      <div class="gift-box" id="giftBox">
+        <div class="gift-lid">
+          <div class="gift-ribbon-h"></div>
+          <div class="gift-bow"></div>
+        </div>
+        <div class="gift-body">
+          <div class="gift-ribbon-v"></div>
+          <span class="gift-tag">For the love of my life</span>
+        </div>
+        <div class="gift-shadow"></div>
+      </div>
+      <h1 class="gift-title">Happy Birthday, <span class="gift-name">Sonali</span></h1>
+      <p class="gift-sub">Jannatul Ferdous Sonali — today belongs to you. 🌹</p>
+      <button class="gift-open-btn" id="openGiftBtn" type="button">
+        <span class="btn-inner">Open Your Surprise 🎁</span>
+      </button>
+      <p class="gift-hint">(psst… turn your sound on 🎧)</p>
+    </div>
+  </div>
+
+  <!-- ══════════════ MUSIC + AMBIENT LAYERS ══════════════ -->
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Toggle music" title="Toggle music">🎵</button>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grad"></div>
+    <div class="stars" id="stars"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="glow glow-c"></div>
+    <div class="hearts" id="heartsLayer"></div>
+    <div class="balloons" id="balloonsLayer"></div>
+    <div class="moon"></div>
+  </div>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <header class="hero" id="hero">
+    <p class="hero-eyebrow">dearest love,</p>
+    <h1 class="hero-title">
+      <span class="t-gradient">Happy</span><br />
+      <span class="t-gradient">Birthday</span>
+    </h1>
+    <p class="hero-name">Jannatul Ferdous Sonali</p>
+    <div class="hero-divider">✦&nbsp;&nbsp;✦&nbsp;&nbsp;✦</div>
+    <p class="hero-sub">
+      Another year of you means another year of magic on this earth.<br class="desk-only" />
+      So I wrote you a little corner of the internet — just for you. 💝
+    </p>
+    <div class="hero-chips">
+      <span class="chip">🎂 another year of you</span>
+      <span class="chip">💖 loved more every day</span>
+      <span class="chip">✨ today is all about you</span>
+    </div>
+    <a class="scroll-cue" href="#letter" aria-label="Scroll down">
+      <span class="cue-text">scroll for your surprise</span>
+      <span class="cue-arrow">⌄</span>
+    </a>
+  </header>
+
+  <!-- ══════════════ LOVE LETTER ══════════════ -->
+  <section class="section letter-section" id="letter">
+    <div class="section-tag">· a letter for you ·</div>
+    <h2 class="section-title script">from my heart, to yours</h2>
+    <div class="letter-card">
+      <div class="letter-wax">S</div>
+      <p class="letter-greet">My dearest Sonali,</p>
+      <p class="letter-body" id="letterType">
+        Some days I still can't believe I get to call you mine. 🌙
+        You are the softest thought of my mornings, the calmest corner of my nights,
+        and the loudest, happiest beat of my heart.
+      </p>
+      <p class="letter-body">
+        Today isn't just the day the world added a beautiful soul — it's the day
+        my life quietly began to make sense. Thank you for the light you carry,
+        the patience you give, and the home I find in your smile. 🏡
+      </p>
+      <p class="letter-body">
+        So here's my wish, whispered into every candle on this page:
+        <em>may your year be as gentle, as golden and as radiant as you are.</em>
+      </p>
+      <p class="letter-sign">— Forever yours,<span class="sig-name">your husband ♥</span></p>
+    </div>
+  </section>
+
+  <!-- ══════════════ HER PHOTO ══════════════ -->
+  <section class="section photo-section" id="photo">
+    <div class="section-tag">· my favourite view ·</div>
+    <h2 class="section-title script">the most beautiful smile</h2>
+    <div class="polaroid-wrap">
+      <div class="polaroid" id="polaroid">
+        <div class="tape tape-tl"></div>
+        <div class="tape tape-tr"></div>
+        <div class="polaroid-img">
+          <img src="assets/sonali.jpg" alt="Sonali — the most beautiful smile" id="sonaliImg" />
+          <div class="polaroid-glare"></div>
+        </div>
+        <p class="polaroid-caption">Sonali · my favourite view ✨</p>
+      </div>
+      <p class="photo-quote">“Every love story is beautiful, but ours is my favourite.”</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ REASONS ══════════════ -->
+  <section class="section reasons-section" id="reasons">
+    <div class="section-tag">· a list that could never end ·</div>
+    <h2 class="section-title script">why my heart picks you, every time</h2>
+    <p class="section-sub">tap each card to peek inside my heart 💌</p>
+    <div class="reasons-grid" id="reasonsGrid">
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">😊</span><span class="card-label">your smile</span></div>
+        <div class="card-face back"><p>The one that turns my whole day around — every single time.</p></div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">💖</span><span class="card-label">your heart</span></div>
+        <div class="card-face back"><p>So warm and so kind — the safest place I've ever known.</p></div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">😂</span><span class="card-label">your laugh</span></div>
+        <div class="card-face back"><p>My favourite sound in the whole world. Yes, the whole world.</p></div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">🌙</span><span class="card-label">quiet moments</span></div>
+        <div class="card-face back"><p>Even our silliest, quietest moments feel like pure magic.</p></div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">🏡</span><span class="card-label">home</span></div>
+        <div class="card-face back"><p>Wherever you are, that's home. It has always been you.</p></div>
+      </div>
+      <div class="reason-card" tabindex="0">
+        <div class="card-face front"><span class="card-emoji">∞</span><span class="card-label">and counting…</span></div>
+        <div class="card-face back"><p>Every new day is one more reason to love you deeper than yesterday.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ BIRTHDAY CAKE ══════════════ -->
+  <section class="section cake-section" id="cake">
+    <div class="section-tag">· make a wish ·</div>
+    <h2 class="section-title script">blow out your candles</h2>
+    <p class="section-sub">tap each flame to blow it out, then hold your wish tight 🕯️</p>
+    <div class="cake-stage">
+      <div class="cake">
+        <div class="cake-candles">
+          <span class="candle" data-n="0"><span class="flame"></span></span>
+          <span class="candle" data-n="1"><span class="flame"></span></span>
+          <span class="candle" data-n="2"><span class="flame"></span></span>
+          <span class="candle" data-n="3"><span class="flame"></span></span>
+          <span class="candle" data-n="4"><span class="flame"></span></span>
+        </div>
+        <div class="cake-tier t3"><span class="drip"></span><span class="drip d2"></span><span class="drip d3"></span><span class="cake-badge">S</span></div>
+        <div class="cake-tier t2"><span class="drip d4"></span><span class="drip d5"></span></div>
+        <div class="cake-tier t1"></div>
+        <div class="cake-plate"></div>
+      </div>
+      <div class="wish-msg" id="wishMsg"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ OUR TIMELINE ══════════════ -->
+  <section class="section timeline-section" id="timeline">
+    <div class="section-tag">· us, through time ·</div>
+    <h2 class="section-title script">our little forever</h2>
+    <div class="timeline" id="timelineEl">
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-content">
+          <h3>the day we met</h3>
+          <p>The moment the universe quietly whispered, “don't let this one go.”</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-content">
+          <h3>the first smile you gave me</h3>
+          <p>That was the day I was completely, happily, forever yours.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div class="tl-content">
+          <h3>every day since</h3>
+          <p>I keep falling for you — deeper, softer, surer — every single morning.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot tl-now"></span>
+        <div class="tl-content">
+          <h3>today ✨</h3>
+          <p>The whole world celebrates the most beautiful reason I have to smile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FINALE ══════════════ -->
+  <section class="section finale-section" id="finale">
+    <div class="finale-heart" id="finaleHeart">❤️</div>
+    <h2 class="finale-title">I love you, <span class="finale-name">Sonali</span></h2>
+    <p class="finale-sub">Today, tomorrow, and in every lifetime after this one.</p>
+    <p class="finale-extra script">Happy Birthday, my love 🎂</p>
+    <button class="confetti-btn" id="replayBtn" type="button">one more round of confetti 🎆</button>
+  </section>
+
+  <footer class="site-footer">
+    <p>Made with <span class="foot-heart">❤️</span> by a proud husband, for the love of his life.</p>
+    <p class="foot-code">crafted with code · caffeine · &amp; an unmeasurable amount of love</p>
+    <p class="foot-meta">© <span id="year">2026</span> — for Jannatul Ferdous Sonali 💝 · <a href="https://github.com/tamjid0x01/Happy-brithday-Sonali" target="_blank" rel="noopener">open source birthday card</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
